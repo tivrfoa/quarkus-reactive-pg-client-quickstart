@@ -5,7 +5,7 @@ function refresh() {
             list = list
                 + '<tr>'
                 + '<td>' + fruit.id + '</td>'
-                + '<td>' + fruit.name + '</td>'
+                + '<td><input type="text" id="updated-name" value="' + fruit.name + '"></td>'
                 + '<td><a href="#" onclick="deleteFruit(' + fruit.id + ')">Delete</a></td>'
                 + '</tr>'
         });

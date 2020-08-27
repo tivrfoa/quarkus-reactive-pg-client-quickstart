@@ -77,6 +77,12 @@ public class FruitResource {
                 .onItem().transform(uri -> Response.created(uri).build());
         }
 
+        @PUT
+        public Uni<Response> update(Fruit fruit) {
+            return fruit.update(client)
+                .onItem().transform(updated -> updated ? Status.OK : Status.NOT_FOUND)
+                .onItem().transform(status -> Response.status(status).build());
+        }
 
         @DELETE
         @Path("{id}")
