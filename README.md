@@ -1,4 +1,6 @@
-# reactive-pg-client-quickstart project
+# Quarkus Reactive SQL Clients
+
+[https://quarkus.io/guides/reactive-sql-clients](https://quarkus.io/guides/reactive-sql-clients)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
